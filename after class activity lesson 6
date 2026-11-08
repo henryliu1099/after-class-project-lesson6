@@ -1,0 +1,26 @@
+age=input("What is your age group?1-4,5-8,9-12,13-17,18-59,60 or larger,")
+can_swin=input("Can you swim 25 meters?yes or no,")
+adult_here=input("Is there an adult with you or you are an adult?yes or no,")
+
+
+if age=="1-4":
+    print("toddler:splash pool only,always with an adult")
+elif age=="5-8":
+    print("child:shallow end,with an adult")
+elif age=="9-12":
+    print("pre-teen:main pool,with adult")
+elif age=="13-17":
+    print("teenager:main pool alone if you can swim otherwise find a adult to go with you")
+elif age=="18-59":
+    print("adult:all pools open to you")
+else:
+    print("senior citizen:all pools open to you with assistance getting in and out of the pool")
+
+if can_swin=="yes" and adult_here=="yes":
+    print("you are clear to go in")
+elif not can_swin=="yes" and adult_here=="yes":
+    print("you are clear to go in")
+elif can_swin=="yes" and not adult_here=="yes" and age>"9-12":
+    print("you are clear to go in")
+else:
+    print("find a adult to go with you before entering")
